@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday Narendra</title>
+    <meta
+      property="og:url"
+      content="https://ranjan-builds.github.io/HBDModi/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Happy Birthday Narendra" />
+    <meta property="og:description" content="Origin Story" />
+    <meta property="og:image" content="https://i.ibb.co/4ns917cK/blob.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -47,7 +55,7 @@
         z-index: 1000;
         border-bottom: 1px solid var(--border-color);
       }
-      
+
       .nav-link {
         color: #a1a1aa;
         transition: color 0.3s;
@@ -158,14 +166,25 @@
         z-index: 2;
       }
 
-      .cake-icing::before, .cake-icing::after {
+      .cake-icing::before,
+      .cake-icing::after {
         content: "";
         position: absolute;
         background-color: #fafafa;
         border-radius: 20px;
       }
-      .cake-icing::before { top: 15px; left: 10px; width: 20px; height: 30px; }
-      .cake-icing::after { top: 15px; right: 20px; width: 25px; height: 25px; }
+      .cake-icing::before {
+        top: 15px;
+        left: 10px;
+        width: 20px;
+        height: 30px;
+      }
+      .cake-icing::after {
+        top: 15px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+      }
 
       .candle {
         position: absolute;
@@ -175,7 +194,13 @@
         height: 50px;
         background-color: #e4e4e7;
         border-radius: 2px;
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, #71717a 5px, #71717a 10px);
+        background-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 5px,
+          #71717a 5px,
+          #71717a 10px
+        );
         box-shadow: inset 0 -2px rgba(0, 0, 0, 0.5);
         z-index: 3;
       }
@@ -188,7 +213,9 @@
         height: 30px;
         background-color: #fbbf24;
         border-radius: 50% 50% 20% 20%;
-        box-shadow: 0 0 10px #fbbf24, 0 0 20px #fbbf24;
+        box-shadow:
+          0 0 10px #fbbf24,
+          0 0 20px #fbbf24;
         animation: flicker 0.1s infinite alternate;
         transform-origin: bottom center;
         transition: all 0.3s ease;
@@ -197,9 +224,18 @@
       }
 
       @keyframes flicker {
-        0% { transform: scale(1) rotate(-1deg); opacity: 0.9; }
-        50% { transform: scale(1.05) rotate(1deg); opacity: 1; }
-        100% { transform: scale(0.95) rotate(-1deg); opacity: 0.8; }
+        0% {
+          transform: scale(1) rotate(-1deg);
+          opacity: 0.9;
+        }
+        50% {
+          transform: scale(1.05) rotate(1deg);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(0.95) rotate(-1deg);
+          opacity: 0.8;
+        }
       }
 
       .flame.blown-out {
@@ -228,8 +264,14 @@
       }
 
       @keyframes smokeRise {
-        0% { transform: translateY(0) scale(1); background: rgba(255, 255, 255, 0.4); }
-        100% { transform: translateY(-100px) scale(6); background: rgba(255, 255, 255, 0); }
+        0% {
+          transform: translateY(0) scale(1);
+          background: rgba(255, 255, 255, 0.4);
+        }
+        100% {
+          transform: translateY(-100px) scale(6);
+          background: rgba(255, 255, 255, 0);
+        }
       }
 
       /* Buttons */
@@ -259,7 +301,7 @@
         width: 100%;
         max-width: 300px;
         height: 6px;
-        background: rgba(255,255,255,0.1);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 4px;
         margin: 20px auto;
         overflow: hidden;
@@ -283,7 +325,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
       }
-      
+
       .content-section {
         padding: 100px 20px;
         border-top: 1px solid var(--border-color);
@@ -305,14 +347,16 @@
         overflow: hidden;
         aspect-ratio: 1 / 1;
         cursor: pointer;
-        border: 1px solid rgba(255,255,255,0.05);
+        border: 1px solid rgba(255, 255, 255, 0.05);
       }
 
       .gallery-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.5s ease, filter 0.5s ease;
+        transition:
+          transform 0.5s ease,
+          filter 0.5s ease;
         filter: grayscale(100%) brightness(0.8);
       }
 
@@ -326,7 +370,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
         color: white;
         padding: 20px 15px 15px;
         text-align: left;
@@ -378,9 +422,15 @@
         z-index: 1;
       }
 
-      .left { left: 0; }
-      .right { left: 50%; }
-      .right::after { left: -6px; }
+      .left {
+        left: 0;
+      }
+      .right {
+        left: 50%;
+      }
+      .right::after {
+        left: -6px;
+      }
 
       .timeline-content {
         padding: 25px;
@@ -391,7 +441,7 @@
       }
 
       .timeline-content:hover {
-        border-color: rgba(255,255,255,0.3);
+        border-color: rgba(255, 255, 255, 0.3);
       }
 
       /* Wish Cards */
@@ -410,12 +460,14 @@
         border-radius: 8px;
         color: #a1a1aa;
         position: relative;
-        transition: transform 0.3s ease, border-color 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease;
       }
 
       .wish-card:hover {
         transform: translateY(-5px);
-        border-color: rgba(255,255,255,0.3);
+        border-color: rgba(255, 255, 255, 0.3);
       }
 
       /* Interactive Present */
@@ -432,13 +484,24 @@
         transition: transform 0.3s;
       }
 
-      .present-box::before, .present-box::after {
+      .present-box::before,
+      .present-box::after {
         content: "";
         position: absolute;
         background: #e4e4e7;
       }
-      .present-box::before { width: 16px; height: 100%; left: 50%; transform: translateX(-50%); }
-      .present-box::after { height: 16px; width: 100%; top: 50%; transform: translateY(-50%); }
+      .present-box::before {
+        width: 16px;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .present-box::after {
+        height: 16px;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
       .present-lid {
         width: 170px;
@@ -472,7 +535,8 @@
         height: 20px;
         z-index: 3;
       }
-      .bow-left, .bow-right {
+      .bow-left,
+      .bow-right {
         position: absolute;
         width: 25px;
         height: 25px;
@@ -488,8 +552,10 @@
         transform: rotate(45deg);
       }
 
-      .present-box.opened .present-lid { transform: rotate(-110deg) translate(-20px, -10px); }
-      
+      .present-box.opened .present-lid {
+        transform: rotate(-110deg) translate(-20px, -10px);
+      }
+
       .present-content {
         position: absolute;
         top: 50%;
@@ -523,7 +589,10 @@
         transition: opacity 0.4s;
       }
 
-      #message-modal.show { opacity: 1; pointer-events: auto; }
+      #message-modal.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
 
       .modal-content {
         background: #09090b;
@@ -537,22 +606,39 @@
         transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         border: 1px solid var(--border-color);
       }
-      #message-modal.show .modal-content { transform: scale(1); }
+      #message-modal.show .modal-content {
+        transform: scale(1);
+      }
 
       /* Responsive Adjustments */
       @media (max-width: 768px) {
-        .timeline::after { left: 20px; }
-        .timeline-item { width: 100%; padding-left: 50px; padding-right: 0; }
-        .timeline-item::after { left: 14px; }
-        .right { left: 0; }
-        
-        .glass-panel { padding: 40px 20px; margin-top: 40px; }
-        .profile-wrapper { width: 140px; height: 140px; }
+        .timeline::after {
+          left: 20px;
+        }
+        .timeline-item {
+          width: 100%;
+          padding-left: 50px;
+          padding-right: 0;
+        }
+        .timeline-item::after {
+          left: 14px;
+        }
+        .right {
+          left: 0;
+        }
+
+        .glass-panel {
+          padding: 40px 20px;
+          margin-top: 40px;
+        }
+        .profile-wrapper {
+          width: 140px;
+          height: 140px;
+        }
       }
     </style>
   </head>
   <body>
-
     <!-- Navigation -->
     <nav class="py-4 px-6 flex justify-center space-x-8 font-medium">
       <a href="#home" class="nav-link">Home</a>
@@ -570,19 +656,27 @@
             src="./assets/main.png"
             alt="Narendra"
             class="profile-photo"
-            onerror="this.src='https://placehold.co/600x600/09090b/ffffff?text=Narendra'"
+            onerror="
+              this.src =
+                'https://placehold.co/600x600/09090b/ffffff?text=Narendra'
+            "
           />
         </div>
 
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight"
+        >
           Happy Birthday
         </h1>
-        <h2 class="text-2xl md:text-3xl font-light text-zinc-400 mb-6 uppercase tracking-[0.2em]">
+        <h2
+          class="text-2xl md:text-3xl font-light text-zinc-400 mb-6 uppercase tracking-[0.2em]"
+        >
           Narendra
         </h2>
 
         <p class="text-lg text-zinc-500 mb-10 font-light">
-          "Count your life by smiles, not tears. Count your age by friends, not years."
+          "Count your life by smiles, not tears. Count your age by friends, not
+          years."
         </p>
 
         <div class="cake-container" id="cake">
@@ -595,8 +689,11 @@
         </div>
 
         <p class="text-sm text-zinc-400 mb-4 font-medium" id="instruction-text">
-          <i class="fas fa-microphone-alt text-zinc-300 mr-2"></i>Allow microphone access and blow to make a wish
-          <br><span class="text-xs text-zinc-500 font-normal mt-1 block">(Or tap the flame to blow it out)</span>
+          <i class="fas fa-microphone-alt text-zinc-300 mr-2"></i>Allow
+          microphone access and blow to make a wish <br /><span
+            class="text-xs text-zinc-500 font-normal mt-1 block"
+            >(Or tap the flame to blow it out)</span
+          >
         </p>
 
         <div class="meter-container" id="meter-container">
@@ -607,10 +704,15 @@
           <i class="fas fa-wind"></i> Enable Mic
         </button>
 
-        <div id="mic-status" class="text-xs mt-4 text-zinc-500 font-medium"></div>
+        <div
+          id="mic-status"
+          class="text-xs mt-4 text-zinc-500 font-medium"
+        ></div>
       </div>
-      
-      <div class="absolute bottom-8 text-zinc-600 hover:text-white transition-colors duration-300">
+
+      <div
+        class="absolute bottom-8 text-zinc-600 hover:text-white transition-colors duration-300"
+      >
         <a href="#gallery"><i class="fas fa-chevron-down text-2xl"></i></a>
       </div>
     </section>
@@ -620,19 +722,46 @@
       <h2 class="section-title">Moments</h2>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="./assets/n1.jpeg" alt="Narendra" onerror="this.src='https://placehold.co/400x400/18181b/ffffff?text=Portrait'" />
+          <img
+            src="./assets/n1.jpeg"
+            alt="Narendra"
+            onerror="
+              this.src =
+                'https://placehold.co/400x400/18181b/ffffff?text=Portrait'
+            "
+          />
           <div class="gallery-caption">The Main Man</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/n2.jpg" alt="Event" onerror="this.src='https://placehold.co/400x400/09090b/ffffff?text=Event'" />
+          <img
+            src="./assets/n2.jpg"
+            alt="Event"
+            onerror="
+              this.src = 'https://placehold.co/400x400/09090b/ffffff?text=Event'
+            "
+          />
           <div class="gallery-caption">Professional Highlights</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/n3.jpg" alt="Colleagues" onerror="this.src='https://placehold.co/400x400/18181b/ffffff?text=Network'" />
+          <img
+            src="./assets/n3.jpg"
+            alt="Colleagues"
+            onerror="
+              this.src =
+                'https://placehold.co/400x400/18181b/ffffff?text=Network'
+            "
+          />
           <div class="gallery-caption">Networking</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/n4.jpg" alt="Milestone" onerror="this.src='https://placehold.co/400x400/09090b/ffffff?text=Milestone'" />
+          <img
+            src="./assets/n4.jpg"
+            alt="Milestone"
+            onerror="
+              this.src =
+                'https://placehold.co/400x400/09090b/ffffff?text=Milestone'
+            "
+          />
           <div class="gallery-caption">Milestones</div>
         </div>
       </div>
@@ -645,29 +774,48 @@
         <div class="timeline-item left">
           <div class="timeline-content">
             <h3 class="font-semibold text-lg mb-1 text-white">The Beginning</h3>
-            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">Origin Story</p>
-            <p class="text-sm leading-relaxed text-zinc-400">The world got a little bit brighter when you arrived.</p>
+            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">
+              Origin Story
+            </p>
+            <p class="text-sm leading-relaxed text-zinc-400">
+              The world got a little bit brighter when you arrived.
+            </p>
           </div>
         </div>
         <div class="timeline-item right">
           <div class="timeline-content">
-            <h3 class="font-semibold text-lg mb-1 text-white">Academic Years</h3>
-            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">Growth & Learning</p>
-            <p class="text-sm leading-relaxed text-zinc-400">From sharing lunchboxes to ambitious late-night studying sessions.</p>
+            <h3 class="font-semibold text-lg mb-1 text-white">
+              Academic Years
+            </h3>
+            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">
+              Growth & Learning
+            </p>
+            <p class="text-sm leading-relaxed text-zinc-400">
+              From sharing lunchboxes to ambitious late-night studying sessions.
+            </p>
           </div>
         </div>
         <div class="timeline-item left">
           <div class="timeline-content">
             <h3 class="font-semibold text-lg mb-1 text-white">Early Career</h3>
-            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">Building Foundations</p>
-            <p class="text-sm leading-relaxed text-zinc-400">Navigating the professional world, taking on new challenges, and reaching milestones.</p>
+            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">
+              Building Foundations
+            </p>
+            <p class="text-sm leading-relaxed text-zinc-400">
+              Navigating the professional world, taking on new challenges, and
+              reaching milestones.
+            </p>
           </div>
         </div>
         <div class="timeline-item right">
           <div class="timeline-content">
             <h3 class="font-semibold text-lg mb-1 text-white">Present Day</h3>
-            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">Continued Success</p>
-            <p class="text-sm leading-relaxed text-zinc-400">Celebrating the remarkable professional and person you've become.</p>
+            <p class="text-xs text-zinc-500 mb-3 uppercase tracking-wider">
+              Continued Success
+            </p>
+            <p class="text-sm leading-relaxed text-zinc-400">
+              Celebrating the remarkable professional and person you've become.
+            </p>
           </div>
         </div>
       </div>
@@ -678,16 +826,33 @@
       <h2 class="section-title">Notes of Appreciation</h2>
       <div class="wish-grid">
         <div class="wish-card">
-          <p class="text-sm leading-relaxed mb-6 font-light">"आज के दिन तोला दिल ले बधई! भगवान करे तोर सपना सब पूरा होवय, नौकरी बढ़िया मिलय, पैसा बरसय…"</p>
-          <span class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3">Ranjan</span>
+          <p class="text-sm leading-relaxed mb-6 font-light">
+            "आज के दिन तोला दिल ले बधई! भगवान करे तोर सपना सब पूरा होवय, नौकरी
+            बढ़िया मिलय, पैसा बरसय…"
+          </p>
+          <span
+            class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3"
+            >Ranjan</span
+          >
         </div>
         <div class="wish-card">
-          <p class="text-sm leading-relaxed mb-6 font-light">"आज तोर जन्मदिन आय, त भगवान ले बस एही दुआ करथों—तोर मोबाइल कभू 1% मं बंद झन होवय, इंटरनेट फुल स्पीड चलय"</p>
-          <span class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3">Jay</span>
+          <p class="text-sm leading-relaxed mb-6 font-light">
+            "आज तोर जन्मदिन आय, त भगवान ले बस एही दुआ करथों—तोर मोबाइल कभू 1% मं
+            बंद झन होवय, इंटरनेट फुल स्पीड चलय"
+          </p>
+          <span
+            class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3"
+            >Jay</span
+          >
         </div>
         <div class="wish-card">
-          <p class="text-sm leading-relaxed mb-6 font-light">"भगवान तोर उमर बढ़ावत रहय, फेर पेट झन बढ़ावय! हैप्पी बर्थडे मोटू!"</p>
-          <span class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3">Team 3</span>
+          <p class="text-sm leading-relaxed mb-6 font-light">
+            "भगवान तोर उमर बढ़ावत रहय, फेर पेट झन बढ़ावय! हैप्पी बर्थडे मोटू!"
+          </p>
+          <span
+            class="text-xs font-semibold text-white uppercase tracking-wider block border-t border-zinc-800 pt-3"
+            >Team 3</span
+          >
         </div>
       </div>
     </section>
@@ -703,10 +868,19 @@
           <div class="bow-right"></div>
         </div>
         <div class="present-lid"></div>
-        <div class="present-content bg-zinc-900 p-6 rounded-lg border border-zinc-800 shadow-2xl">
-          <h3 class="text-xl font-semibold text-white mb-2">Executive Dinner</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">A complimentary fine dining experience valid for this month. Enjoy on us.</p>
-          <div class="text-2xl text-zinc-600"><i class="fas fa-utensils"></i></div>
+        <div
+          class="present-content bg-zinc-900 p-6 rounded-lg border border-zinc-800 shadow-2xl"
+        >
+          <h3 class="text-xl font-semibold text-white mb-2">
+            Executive Dinner
+          </h3>
+          <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+            A complimentary fine dining experience valid for this month. Enjoy
+            on us.
+          </p>
+          <div class="text-2xl text-zinc-600">
+            <i class="fas fa-utensils"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -714,9 +888,18 @@
     <!-- Global Modal -->
     <div id="message-modal">
       <div class="modal-content">
-        <div class="text-4xl mb-6 text-zinc-400" id="modal-icon"><i class="fas fa-check-circle"></i></div>
-        <h3 class="text-2xl font-semibold text-white mb-3 tracking-wide" id="msg-title">Title</h3>
-        <p class="text-zinc-400 text-sm mb-8 leading-relaxed" id="msg-content">Message goes here</p>
+        <div class="text-4xl mb-6 text-zinc-400" id="modal-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3
+          class="text-2xl font-semibold text-white mb-3 tracking-wide"
+          id="msg-title"
+        >
+          Title
+        </h3>
+        <p class="text-zinc-400 text-sm mb-8 leading-relaxed" id="msg-content">
+          Message goes here
+        </p>
         <button class="btn-custom mx-auto" id="close-msg-btn">Continue</button>
       </div>
     </div>
@@ -748,7 +931,11 @@
         cheerSound.volume = 0.9;
 
         // --- Helper Functions ---
-        function showMessage(title, message, iconHtml = '<i class="fas fa-star"></i>') {
+        function showMessage(
+          title,
+          message,
+          iconHtml = '<i class="fas fa-star"></i>',
+        ) {
           msgTitle.textContent = title;
           msgContent.innerHTML = message;
           modalIcon.innerHTML = iconHtml;
@@ -758,20 +945,40 @@
         function fireConfetti() {
           let duration = 3 * 1000;
           let animationEnd = Date.now() + duration;
-          let defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000, colors: ['#ffffff', '#a1a1aa', '#3f3f46'] };
-          function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+          let defaults = {
+            startVelocity: 30,
+            spread: 360,
+            ticks: 60,
+            zIndex: 3000,
+            colors: ["#ffffff", "#a1a1aa", "#3f3f46"],
+          };
+          function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+          }
 
           let interval = setInterval(function () {
             let timeLeft = animationEnd - Date.now();
             if (timeLeft <= 0) return clearInterval(interval);
             let particleCount = 50 * (timeLeft / duration);
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            confetti(
+              Object.assign({}, defaults, {
+                particleCount,
+                origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+              }),
+            );
+            confetti(
+              Object.assign({}, defaults, {
+                particleCount,
+                origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+              }),
+            );
           }, 250);
         }
 
         // --- Event Listeners ---
-        closeMsgBtn.addEventListener("click", () => messageModal.classList.remove("show"));
+        closeMsgBtn.addEventListener("click", () =>
+          messageModal.classList.remove("show"),
+        );
 
         presentBox.addEventListener("click", function () {
           if (!this.classList.contains("opened")) {
@@ -784,9 +991,13 @@
         async function setupMicrophone() {
           try {
             micStatus.textContent = "Requesting microphone access...";
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            const stream = await navigator.mediaDevices.getUserMedia({
+              audio: true,
+            });
             streamRef = stream;
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            audioContext = new (
+              window.AudioContext || window.webkitAudioContext
+            )();
             analyser = audioContext.createAnalyser();
             microphone = audioContext.createMediaStreamSource(stream);
             javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
@@ -798,7 +1009,8 @@
 
             startMicBtn.style.display = "none";
             meterContainer.style.display = "block";
-            instructionText.innerHTML = '<i class="fas fa-wind text-white mr-2"></i> Blow into the microphone now';
+            instructionText.innerHTML =
+              '<i class="fas fa-wind text-white mr-2"></i> Blow into the microphone now';
             instructionText.classList.add("text-white", "animate-pulse");
             micStatus.textContent = "";
 
@@ -822,7 +1034,8 @@
             };
           } catch (err) {
             console.error(err);
-            micStatus.innerHTML = "Microphone blocked or not supported.<br>Tap the flame to blow it out.";
+            micStatus.innerHTML =
+              "Microphone blocked or not supported.<br>Tap the flame to blow it out.";
           }
         }
 
@@ -838,12 +1051,17 @@
           meterContainer.style.display = "none";
           startMicBtn.style.display = "none";
           micStatus.textContent = "";
-          
-          instructionText.innerHTML = 'Happy Birthday Narendra';
-          instructionText.className = "text-xl text-white font-medium mt-4 tracking-wide uppercase";
+
+          instructionText.innerHTML = "Happy Birthday Narendra";
+          instructionText.className =
+            "text-xl text-white font-medium mt-4 tracking-wide uppercase";
 
           // Play custom sound on blowout
-          cheerSound.play().catch(e => console.log("Audio play blocked by browser policies:", e));
+          cheerSound
+            .play()
+            .catch((e) =>
+              console.log("Audio play blocked by browser policies:", e),
+            );
 
           fireConfetti();
 
@@ -851,13 +1069,14 @@
             showMessage(
               "Wish Granted",
               "May your professional and personal goals be achieved this year.<br><br>Please scroll down to reveal your token of appreciation.",
-              '<i class="fas fa-glass-cheers"></i>'
+              '<i class="fas fa-glass-cheers"></i>',
             );
           }, 1500);
         }
 
         startMicBtn.addEventListener("click", () => {
-          if (audioContext && audioContext.state === "suspended") audioContext.resume();
+          if (audioContext && audioContext.state === "suspended")
+            audioContext.resume();
           setupMicrophone();
         });
 
