@@ -1024,13 +1024,13 @@
 
               micMeter.style.width = Math.min(100, average * 1.5) + "%";
 
-              if (average > 15 && average < 45) {
+              if (average > 8 && average < 30) {
                 flame.style.transform = `scale(${1 - average / 150}) rotate(${Math.random() * 30 - 15}deg)`;
               } else {
                 flame.style.transform = "";
               }
 
-              if (average > 50) blowOutCandle(); // Threshold to blow
+              if (average > 30) blowOutCandle(); // Threshold to blow
             };
           } catch (err) {
             console.error(err);
